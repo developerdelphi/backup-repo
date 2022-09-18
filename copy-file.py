@@ -5,13 +5,6 @@ import os
 import json
 import sys
 
-
-# DEVE RECEBER UMA ORIGEM E UM DESTINO
-# pathOrigem = '/home/leo/projetos/python/project-backup/files-to-copy'
-# pathDestino = '/home/leo/projetos/python/project-backup/files-of-backup'
-
-# today RECEBE A DATA ATUAL COMO PARÂMETRO NOME DA PASTA E EXCLUSÃO DE COPIAS ANTIGAS
-
 file_name = date.today().isoformat()
 path_origin_bk = Path()
 path_destiny_bk = Path()
@@ -135,31 +128,4 @@ def format_size_file(size):
   size = round(size, 2)
   return f'{size}{txt}'
 
-
-
 app()
-# checarDestino = Path(pathDestino)
-
-# print('Hoje é:', today.isoformat())
-
-# for child in checarDestino.iterdir(): ultimo_diretorio = child
-
-# print('este é o último diretorio:', ultimo_diretorio.stem)
-
-# for child in checarDestino.iterdir():
-#   if(child.stem == today.isoformat()):
-#     print('Diretório encontrado: ', child.stem)
-
-
-
-# origem = Path(pathOrigem)
-# print('Origem: ', origem.absolute())
-# for child in origem.iterdir(): print(child)
-# shutil.copytree(origem.absolute(), pathDestino)
-
-# backup = Path(pathDestino)
-# for(f to origem.glob('*')):
-
-# print('Existe o backup: ', (list(origem.glob('**/*'))))
-# verificarBackup = Path(pathDestino)
-# print('Lista Destino':, verificarBackup)
